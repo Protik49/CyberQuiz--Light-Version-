@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="shield-icon">🛡️</div>
+            <h1>Cybersecurity Awareness Quiz</h1>
+            <p>Test your knowledge about cybersecurity best practices and learn how to stay safe online!</p>
+        </header>
+
+        <main class="quiz-container">
+            <div class="quiz-header">
+                <div class="progress">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span></div>
+                <div class="timer" id="timer">Time: 30s</div>
+            </div>
+
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="feedback" id="feedback"></div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" id="prevBtn">Previous</button>
+                <button class="btn btn-primary" id="nextBtn">Next</button>
+            </div>
+        </main>
+
+        <section class="scandals">
+            <h2>Major Cybersecurity Scandals in History</h2>
+            <div class="scandal-item">
+                <h3>The Equifax Data Breach</h3>
+                <div class="date">September 2017</div>
+                <p>One of the largest data breaches in history affected 147 million people. Hackers exploited a vulnerability in Equifax's system to steal sensitive personal data including Social Security numbers, birth dates, addresses, and driver's license numbers.</p>
+            </div>
+            <div class="scandal-item">
+                <h3>SolarWinds Supply Chain Attack</h3>
+                <div class="date">December 2020</div>
+                <p>Attackers compromised SolarWinds' software development supply chain, inserting malware into legitimate software updates. This affected up to 18,000 organizations including multiple U.S. government agencies.</p>
+            </div>
+            <div class="scandal-item">
+                <h3>Colonial Pipeline Ransomware Attack</h3>
+                <div class="date">May 2021</div>
+                <p>The largest fuel pipeline in the U.S. was forced to shut down due to a ransomware attack, causing fuel shortages across the East Coast. The company paid a $4.4 million ransom to restore operations.</p>
+            </div>
+            <div class="scandal-item">
+                <h3>Yahoo Data Breaches</h3>
+                <div class="date">2013-2014 (disclosed in 2016)</div>
+                <p>Two massive data breaches affected all 3 billion Yahoo user accounts, making it the largest data breach in history. The stolen information included names, email addresses, phone numbers, and hashed passwords.</p>
+            </div>
+        </section>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
